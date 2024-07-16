@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="output.css">
+    <title>TailwindCSS Guri Template</title>
+</head>
+<body class="text-gray-600">
+
+	<!-- main navar -->
+	<nav class="nav py-6" id="home">
+		<div class="container px-4 mx-auto flex justify-between items-center">
+			<div class="text-4xl font-bold text-gray-600 tracking-tighter logo">
+				<a href="#">Guri</a>
+			</div>
+			<button id="main-nav-toggle" class="flex md:hidden items-center justify-center w-10 h-10 bg-lime-50 rounded-md transition hover:bg-lime-300 hover:text-white">
+				<svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+				  </svg>
+			</button>
+			<ul id="main-nav" class="capitalize font-semibold tracking-tight fixed top-0 left-[-250px] w-[220px] border-r-2 border-lime-300 h-full bg-white p-6 z-50 md:static md:flex md:p-0 md:w-auto md:border-none">
+				<li class="mb-3 md:m-0"><a href="#home" class="text-lime-500 mx-3">home</a></li>
+				<li class="mb-3 md:m-0"><a href="#collection" class="text-gray-500 mx-3 transition duration-300 hover:text-lime-500">collection</a></li>
+				<li class="mb-3 md:m-0"><a href="#testimonials" class="text-gray-500 mx-3 transition duration-300 hover:text-lime-500">testimonials</a></li>
+				<li class="mb-3 md:m-0"><a href="#blog" class="text-gray-500 mx-3 transition duration-300 hover:text-lime-500">blog</a></li>
+				<li class="mb-3 md:m-0"><a href="#contact" class="text-gray-500 mx-3 transition duration-300 hover:text-lime-500">contact</a></li>
+				<span class="flex md:ml-4">
+					<a href="#" class="transition duration-300 hover:bg-lime-300 w-8 h-8 border border-lime-300 rounded-full flex justify-center items-center">
+						<svg class="w-5 text-lime-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+						</svg>
+					</a>
+					<a href="#" class="bg-lime-300 w-8 h-8 border border-lime-300 rounded-full flex justify-center items-center ms-2">
+						<svg class="w-5 text-lime-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+						</svg>
+					</a>
+				</span>
+			</ul>
+		</div>
+	</nav>
+	<!-- main navar -->
+
+	<!-- header -->
+	<header class="py-24">
+		<div class="container px-4 grid md:grid-cols-5 mx-auto">
+			<div class="col-span-3 flex flex-col justify-center">
+				<h1 class="text-4xl md:text-5xl font-semibold tracking-tighter capitalize">Modern forniture for minilative lovers</h1>
+				<p class="text-lg my-5 text-gray-500 font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium suscipit blanditiis nesciunt sapiente. Praesentium exercitationem autem quisquam laboriosam pariatur dolore, commodi architecto omnis ducimus dolorum quia minima numquam, id magni earum!</p>
+				<div class="flex flex-col gap-1 sm:flex-row">
+					<button class="flex justify-between items-center pointer font-semibold uppercase bg-lime-300 text-lime-800 py-3 px-8 rounded-lg me-1 transition duration-300 hover:bg-white hover:text-lime-500 hover:shadow">
+						shop now
+						<svg class="w-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+						</svg>
+					</button>
+					<button class="flex justify-between items-center pointer font-semibold uppercase bg-gray-100 text-lime-500 py-3 px-8 rounded-lg transition duration-300 hover:bg-white hover:text-lime-500 hover:shadow">
+						learn more
+						<svg class="w-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="col-span-2">
+				<img class="rounded-3xl w-full" src="https://static.vecteezy.com/system/resources/previews/011/794/199/non_2x/fabric-armchair-soft-cushion-with-metal-leg-3d-rendering-modern-interior-design-for-living-room-free-png.png" alt="just an image">
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- products -->
+	<section class="py-24 bg-lime-50" id="collection">
+		<div class="container px-4 mx-auto">
+
+			<div class="flex flex-col md:flex-row justify-between items-center">
+				<h2 class="text-4xl sm:text-5xl font-semibold capitalize tracking-tighter text-center md:text-left max-w-[460px]">Our new exlusive collections</h2>
+				<p class="text-lg max-w-[480px] mt-4 md:mr-0 text-center md:text-right text-gray-500 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores mollitia, neque eligendi cum optio, voluptatum totam, ex ipsum reiciendis illum? Officiis et aspernatur atque eligendi cum incidunt labore iusto!</p>
+			</div>
+
+			<div class="py-12">
+				<div class="flex flex-wrap gap-1 container px-4 mx-auto">
+					<button class="pointer font-semibold uppercase bg-lime-300 text-sm py-3 px-6 rounded-lg">all</button>
+					<button class="pointer font-semibold uppercase bg-gray-100 text-sm py-3 px-6 rounded-lg transition duration-300 hover:bg-lime-300">dinning</button>
+					<button class="pointer font-semibold uppercase bg-gray-100 text-sm py-3 px-6 rounded-lg transition duration-300 hover:bg-lime-300">chair</button>
+					<button class="pointer font-semibold uppercase bg-gray-100 text-sm py-3 px-6 rounded-lg transition duration-300 hover:bg-lime-300">bed</button>
+					<button class="pointer font-semibold uppercase bg-gray-100 text-sm py-3 px-6 rounded-lg transition duration-300 hover:bg-lime-300">kitchen</button>
+					<button class="pointer font-semibold uppercase bg-gray-100 text-sm py-3 px-6 rounded-lg transition duration-300 hover:bg-lime-300">shelves</button>
+				</div>
+			</div>
+
+			<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+				
+				<!-- product card -->
+				<div class="rounded-2xl overflow-hidden relative shadow-md transition duration-300 hover:shadow-sm">
+					<img class="h-72 w-full object-cover" src="https://m.media-amazon.com/images/I/418QpEn9JKL._AC_UF1000,1000_QL80_.jpg" alt="">
+					<div class="p-4 text-center">
+						<a href="#" class="text-2xl tracking-tighter block my-4">
+							Lorem ipsum dolor
+							<span class="text-3xl text-lime-500 font-bold inline-block ml-1">$49.50</span>
+						</a>
+
+						<div class="btns flex justify-center gap-1">
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+								</svg>
+							</button>
+						</div>
+
+					</div>
+					<span class="flex items-center bg-white rounded-full uppercase font-semibold cursor-pointer text-xs px-2 py-1 m-3 absolute top-0 right-0 transition duration-300 hover:text-lime-500">
+						<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+						</svg>
+						save
+					</span>
+				</div>
+				<!-- product card -->
+				<div class="rounded-2xl overflow-hidden relative shadow-md transition duration-300 hover:shadow-sm">
+					<img class="h-72 w-full object-cover" src="https://mysleepyhead.com/media/catalog/product/4/t/4thaug_2ndhalf5934_green.jpg" alt="">
+					<div class="p-4 text-center">
+						<a href="#" class="text-2xl tracking-tighter block my-4">
+							Lorem ipsum dolor
+							<span class="text-3xl text-lime-500 font-bold inline-block ml-1">$49.50</span>
+						</a>
+
+						<div class="btns flex justify-center gap-1">
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+								</svg>
+							</button>
+						</div>
+
+					</div>
+					<span class="flex items-center bg-white rounded-full uppercase font-semibold cursor-pointer text-xs px-2 py-1 m-3 absolute top-0 right-0 transition duration-300 hover:text-lime-500">
+						<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+						</svg>
+						save
+					</span>
+				</div>
+				<!-- product card -->
+				<div class="rounded-2xl overflow-hidden relative shadow-md transition duration-300 hover:shadow-sm">
+					<img class="h-72 w-full object-cover" src="https://furnituredirectonline.co.uk/cdn/shop/products/Carnaby-7.png?v=1680258787&width=1214" alt="">
+					<div class="p-4 text-center">
+						<a href="#" class="text-2xl tracking-tighter block my-4">
+							Lorem ipsum dolor
+							<span class="text-3xl text-lime-500 font-bold inline-block ml-1">$49.50</span>
+						</a>
+
+						<div class="btns flex justify-center gap-1">
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+								</svg>
+							</button>
+							<button class="flex justify-center items-center p-3 rounded-full bg-lime-200 text-lime-800 transition duration-300 hover:bg-lime-500 hover:text-white">
+								<svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+								</svg>
+							</button>
+						</div>
+
+					</div>
+					<span class="flex items-center bg-white rounded-full uppercase font-semibold cursor-pointer text-xs px-2 py-1 m-3 absolute top-0 right-0 transition duration-300 hover:text-lime-500">
+						<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+						</svg>
+						save
+					</span>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+	<!-- products -->
+
+	<!-- new experience -->
+	<section class="py-24">
+		<div class="container px-4 mx-auto">
+			<div class="flex flex-col md:flex-row justify-between">
+				<div>
+					<img src="https://t4.ftcdn.net/jpg/07/93/56/79/360_F_793567949_wnz4sUfpZ8habqAiPm5rGtslxujWBJXB.jpg" alt="">
+				</div>
+				<div class="text-right flex items-center">
+					<div class="text-center md:text-right">
+						<h1 class="text-4xl md:text-5xl font-semibold tracking-tighter capitalize">A new experience is comming soon</h1>
+						<p class="text-lg my-8 text-gray-500">Lorem, ipsum dolor sit amet. laboriosam pariatur dolore, commodi architecto omnis ducimus dolorum quia minima numquam, id magni earum!</p>
+						<button class="ml-auto mx-auto md:mr-0 flex items-center px-10 py-5 bg-lime-300 rounded-lg font-bold text-sm uppercase text-lime-800 transition-all duration-200 hover:pl-24">
+							<svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+							</svg>
+							be the first to know
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- new experience -->
+
+	<!-- call to action -->
+	<section class="bg-lime-50">
+		<div class="container px-4 mx-auto">
+			<div class="grid md:grid-cols-2">
+				
+				<div class="flex items-center py-12">
+					<div class="pe-24">
+						<h1 class="text-4xl md:text-5xl font-semibold tracking-tighter capitalize">minimalism actually meets the functionality</h1>
+						<p class="text-lg my-8 text-gray-500">Lorem, ipsum dolor sit amet. laboriosam pariatur dolore minima numquam, id magni earum!</p>
+						<button class="flex items-center px-10 py-5 bg-lime-300 rounded-lg font-bold text-sm uppercase text-lime-800 transition-alal duration-300 hover:pr-24 ">
+							<svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+							</svg>
+							shop now
+						</button>
+					</div>
+				</div>
+
+				<div class="hidden md:block">
+					<img class="w-full h-full object-cover" src="https://www.bhg.com/thmb/rvOm4fbrqM3Kv-tT2tqIn0VKljY=/3958x0/filters:no_upscale():strip_icc()/Midcentury-modern-dining-room-HGQ36597-E78HH53cq_eA6d2sgX1v8t-b8a6ea0f544f43d59feabcc6aba6a546.jpg" alt="">
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- call to action -->
+
+	<!-- testimonials -->
+	<section class="py-24 testimonials" id="testimonials">
+		<h1 class="text-center text-4xl md:text-5xl font-semibold tracking-tighter capitalize mb-4">What they say about us</h1>
+		<div class="container px-4 mx-auto">
+
+			<div class="testimonials mt-8" id="slideshowContainer">
+
+				<!-- customer review -->
+				<div id="slideshow-01" class="testimonials-block p-12 rounded-xl bg-lime-50 text-center">
+					<img class="block m-auto w-24 h-24 rounded-full object-cover p-1 border-2 border-lime-500" src="https://www.diversitywoman.com/wp-content/uploads/2023/01/CEOWoman_Slider.jpg" alt="just an image">
+					<span class="quote-icon text-9xl text-lime-500 select-none">
+						&rdquo;
+					</span>
+					<p class="text-lg text-gray-500 -mt-12 mx-auto max-w-[720px]">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita odio eius ipsa earum iusto deserunt autem atque doloribus, mollitia sequi tempora nobis unde veniam doloremque maiores exercitationem magnam! Aut, error mollitia?
+					</p>
+					<div class="flex items-center justify-center gap-3 social mt-4">
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Faceook</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Instagram</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Twitter</a>
+					</div>
+				</div>
+				<!-- customer review -->
+				<div id="slideshow-02" class="hidden testimonials-block p-12 rounded-xl bg-lime-50 text-center">
+					<img class="block m-auto w-24 h-24 rounded-full object-cover p-1 border-2 border-lime-500" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="just an image">
+					<span class="quote-icon text-9xl text-lime-500 select-none">
+						&rdquo;
+					</span>
+					<p class="text-lg text-gray-500 -mt-12 mx-auto max-w-[720px]">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita odio eius ipsa earum iusto deserunt autem atque doloribus, mollitia sequi tempora nobis unde veniam doloremque maiores exercitationem magnam! Aut, error mollitia?
+					</p>
+					<div class="flex items-center justify-center gap-3 social mt-4">
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Faceook</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Instagram</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Twitter</a>
+					</div>
+				</div>
+				<!-- customer review -->
+				<div id="slideshow-03" class="hidden testimonials-block p-12 rounded-xl bg-lime-50 text-center">
+					<img class="block m-auto w-24 h-24 rounded-full object-cover p-1 border-2 border-lime-500" src="https://media.istockphoto.com/id/1309101136/photo/anger-man-confused-image.jpg?b=1&s=170667a&w=0&k=20&c=Zm7ssTHNX4SCEgltDgpwgL5rVu_MEqNS1bXuFQrOAws=" alt="just an image">
+					<span class="quote-icon text-9xl text-lime-500 select-none">
+						&rdquo;
+					</span>
+					<p class="text-lg text-gray-500 -mt-12 mx-auto max-w-[720px]">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita odio eius ipsa earum iusto deserunt autem atque doloribus, mollitia sequi tempora nobis unde veniam doloremque maiores exercitationem magnam! Aut, error mollitia?
+					</p>
+					<div class="flex items-center justify-center gap-3 social mt-4">
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Faceook</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Instagram</a>
+						<a href="#" class="text-sm font-bold tracking-tighter transition-colors hover:text-lime-500">Twitter</a>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="bullets flex gap-3 justify-center mt-4 cursor-pointer" id="slideShowBullets">
+				<span data-show="#slideshow-01" class="w-3 h-3 bg-lime-100 rounded-full active-bullet"></span>
+				<span data-show="#slideshow-02" class="w-3 h-3 bg-lime-100 rounded-full"></span>
+				<span data-show="#slideshow-03" class="w-3 h-3 bg-lime-100 rounded-full"></span>
+			</div>
+			
+		</div>
+	</section>
+	<!-- testimonials -->
+
+	<!-- blog -->
+	<section class="py-24 bg-gray-50" id="blog">
+		<div class="container px-4 mx-auto">
+			<h1 class="text-center text-4xl md:text-5xl font-semibold tracking-tighter capitalize mb-4">read our blog</h1>
+			<p class="text-center text-lg text-gray-400 mb-24 mx-auto max-w-[720px]">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem atque rerum fuga voluptates veritatis numquam saepe, sequi repudiandae. Nesciunt perspiciatis vel maxime quisquam amet nihil itaque quam ratione quas!
+			</p>
+			<div>
+				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+					<!-- article -->
+					<div class="relative bg-white border-b-2 border-lime-500">
+						<img class="w-full h-52 object-cover" src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/best-furniture-for-your-home-2022-section-1.jpg" alt="">
+						<div class="px-5">
+							<h3 class="capitalize tracking-tight font-semibold text-2xl mt-4">
+								<a href="#">
+									Lorem ipsum dolor sit amet consectetur.
+								</a>
+							</h3>
+							<p class="text-gray-400 my-3 tracking-tighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem...</p>
+							<div class="tags mb-6">
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag1</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag2</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag3</span>
+							</div>
+						</div>
+						<span class="flex items-center bg-white rounded-full uppercase text-sm px-3 py-[3px] m-3 absolute top-0 left-0">
+							<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+							2 days ago
+						</span>
+					</div>
+					<!-- article -->
+					<div class="relative bg-white border-b-2 border-lime-500">
+						<img class="w-full h-52 object-cover" src="https://d2kz53n3bzvihv.cloudfront.net/resized/790_395_0_255_255_255/media/gbu0/categoryxxl/image/DesktopHeader-P393_LLA005_LLA008_LLA010_A.jpg.jpeg" alt="">
+						<div class="px-5">
+							<h3 class="capitalize tracking-tight font-semibold text-2xl mt-4">
+								<a href="#">
+									Lorem ipsum dolor sit amet consectetur.
+								</a>
+							</h3>
+							<p class="text-gray-400 my-3 tracking-tighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem...</p>
+							<div class="tags mb-6">
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag1</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag2</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag3</span>
+							</div>
+						</div>
+						<span class="flex items-center bg-white rounded-full uppercase text-sm px-3 py-[3px] m-3 absolute top-0 left-0">
+							<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+							2 days ago
+						</span>
+					</div>
+					<!-- article -->
+					<div class="relative bg-white border-b-2 border-lime-500">
+						<img class="w-full h-52 object-cover" src="https://5.imimg.com/data5/SELLER/Default/2021/11/WA/FH/PM/4512991/bedroom-interior-furniture.jpg" alt="">
+						<div class="px-5">
+							<h3 class="capitalize tracking-tight font-semibold text-2xl mt-4">
+								<a href="#">
+									Lorem ipsum dolor sit amet consectetur.
+								</a>
+							</h3>
+							<p class="text-gray-400 my-3 tracking-tighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem...</p>
+							<div class="tags mb-6">
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag1</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag2</span>
+								<span class="bg-lime-500 text-white rounded-full uppercase cursor-pointer text-xs px-2 py-[3px]">tag3</span>
+							</div>
+						</div>
+						<span class="flex items-center bg-white rounded-full uppercase text-sm px-3 py-[3px] m-3 absolute top-0 left-0">
+							<svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+							</svg>
+							2 days ago
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- blog -->
+
+	<!-- contact -->
+	<section class="py-12 bg-lime-800 text-white" id="contact">
+		<h1 class="text-center text-4xl md:text-5xl font-semibold tracking-tighter capitalize mb-12">Contact us</h1>
+		<div class="container mx-auto px-4">
+			<form action="#" method="POST" class="grid md:grid-cols-2 gap-2 max-w-xl mx-auto">
+				<input type="text" class="p-4 w-full rounded-lg bg-[#0001] border-r-4 border-transparent focus:outline-none transition-all duration-200 focus:border-r-lime-400 tracking-tight placeholder:text-[#fff5]" placeholder="Name">
+				<input type="text" class="p-4 w-full rounded-lg bg-[#0001] border-r-4 border-transparent focus:outline-none transition-all duration-200 focus:border-r-lime-400 tracking-tight placeholder:text-[#fff5]" placeholder="Subject">
+				<input type="email" class="col-span-2 p-4 w-full rounded-lg bg-[#0001] border-r-4 border-transparent focus:outline-none transition-all duration-200 focus:border-r-lime-400 tracking-tight placeholder:text-[#fff5]" placeholder="E-mail">
+				<textarea class="col-span-2 p-4 w-full rounded-lg bg-[#0001] border-r-4 border-transparent focus:outline-none transition-all duration-200 focus:border-r-lime-400 tracking-tight placeholder:text-[#fff5] h-44" placeholder="Message"></textarea>
+				<input type="submit" class="col-span-2 p-4 rounded-lg bg-[#000a] uppercase font-semibold border-r-4 cursor-pointer border-transparent focus:outline-none w-fit px-12 mx-auto transition-all duration-200 hover:px-14" value="Send">
+			</form>
+		</div>
+	</section>
+	<!-- contact -->
+
+	<!-- footer -->
+	<footer class="bg-black py-6">
+		<div class="container px-4 flex flex-col sm:flex-row items-center justify-between mx-auto text-lime-50">
+			<div>&copy; 2024, TailwindCSS Template</div>
+			<div class="flex items-center">
+				Designed with
+				<svg class="w-5 mx-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+				</svg>
+				by
+				<a href="https://github.com/otmanetalhaoui/" class="text-lime-500 inline-block ml-1" target="_blank">TALHAOUI</a>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<!-- scroll to top -->
+	<div class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer fixed -right-24 bottom-0 m-4 transition duration-300 hover:scale-125" id="scroll-to-top">
+		<svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+		</svg>
+	</div>
+	<!-- scroll to top -->
+
+	<script src="script.js"></script>
+</body>
+</html>

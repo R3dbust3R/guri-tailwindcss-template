@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-bullet {
+    @apply bg-lime-500 scale-125;
+}
